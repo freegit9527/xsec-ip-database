@@ -13,6 +13,27 @@ xsec ip database为一个恶意IP和域名库(Malicious ip database)，它获取
 1. 支持恶意ip信息导出、导入
 1. 提供了恶意ip和dns检测以及与其他安全产品联动的接口
 
+##安装方法
+1.推荐使用golang1.9以上；
+2.git clone后，修改目录， mv xsec-ip-database xsec-evil-ips
+3.安装依赖：
+go get github.com/PuerkitoBio/goquery
+go get github.com/go-macaron/cache
+go get github.com/go-macaron/csrf
+go get github.com/go-macaron/session
+go get github.com/go-sql-driver/mysql
+go get github.com/go-xorm/core
+go get github.com/go-xorm/xorm
+go get github.com/lib/pq
+go get github.com/mattn/go-sqlite3
+go get github.com/patrickmn/go-cache
+go get github.com/sirupsen/logrus
+go get github.com/toolkits/slice
+go get github.com/x-cray/logrus-prefixed-formatter
+go get gopkg.in/ini.v1
+go get gopkg.in/macaron.v1
+4.go build main.go  编译。
+
 ## 使用方法
 
 ```bash
